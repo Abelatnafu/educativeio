@@ -6,21 +6,23 @@ Array2 = [2, 3, 4, 1, 5]
 p=2
 K = 3
 
-def max_sum_sub(array, k):
+def max_sum_sub(_array, k):
     start = 0
     highest_sum = 0
     sum = 0
-    size = len(array)
+    size = len(_array)
 
     for i in range(size):
-        sum += array[i]
+        sum += _array[i]
 
         if (i >= k -1):
             if highest_sum < sum:
                 highest_sum = sum
-            sum -= array[start]
+            sum -= _array[start]
             start += 1
     return highest_sum
 
 answer = max_sum_sub(Array2, p)
 print(answer)
+
+# SOLVED

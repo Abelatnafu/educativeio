@@ -27,3 +27,5 @@ def small_subarray(_array, S):
 
 answer = small_subarray(array, s)
 print(answer)
+
+ # SOLVED
